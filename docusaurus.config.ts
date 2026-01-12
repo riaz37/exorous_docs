@@ -66,6 +66,11 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
+        {
+          href: 'https://github.com/riaz37/exorous_code',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -81,6 +86,15 @@ const config: Config = {
             {
               label: 'Advanced Features',
               to: '/docs/advanced-intelligence',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/riaz37/exorous_code',
             },
           ],
         },

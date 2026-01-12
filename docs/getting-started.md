@@ -5,7 +5,6 @@ Get Exorous up and running on your local machine in minutes.
 ## Prerequisites
 
 - **Python 3.10+** (highly recommended)
-- **Node.js** (only if you're building the documentation site)
 - An API key for an LLM provider (OpenRouter, OpenAI, Gemini, or Anthropic)
 
 ## Installation
