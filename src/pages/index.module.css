@@ -1,0 +1,112 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 10rem 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bgBlobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: float 20s infinite alternate ease-in-out;
+}
+
+.blob:nth-child(1) {
+  top: -10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.blob:nth-child(2) {
+  bottom: -10%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+  animation-delay: -5s;
+}
+
+.blob:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, transparent 70%);
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(50px, 50px) scale(1.1);
+  }
+}
+
+.subProposition {
+  color: #94a3b8;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.heroImageContainer {
+  padding: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.2);
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .heroImageContainer {
+    margin-top: 3rem;
+  }
+}
